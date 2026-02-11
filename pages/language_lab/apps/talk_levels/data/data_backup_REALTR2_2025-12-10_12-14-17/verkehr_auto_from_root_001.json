@@ -1,0 +1,22 @@
+{
+  "id": "verkehr_auto",
+  "title": "Verkehr & Auto",
+  "items": [
+    {
+      "level": 0,
+      "mnemoKey": "car_broken",
+      "mnemoHint": "STOP",
+      "de": "Mein Auto ist kaputt.",
+      "en": "My car is broken.",
+      "tr": "My car is broken."
+    },
+    {
+      "level": 1,
+      "mnemoKey": "need_tow",
+      "mnemoHint": "TOW",
+      "de": "Ich brauche einen Abschleppdienst.",
+      "en": "I need a tow truck.",
+      "tr": "I need a tow truck."
+    }
+  ]
+}
