@@ -1,0 +1,4 @@
+_archive_legacy/
+**/*.tgz
+**/*.tar.gz
+**/*.zip
