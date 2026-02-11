@@ -2,3 +2,7 @@ _archive_legacy/
 **/*.tgz
 **/*.tar.gz
 **/*.zip
+_archive_legacy/
+**/*.tgz
+**/*.tar.gz
+**/*.zip
