@@ -9,3 +9,15 @@ _archive_legacy/
 
 # local backups
 _backup_*/
+
+# codex backups
+*.bak
+*.bak_*
+*.bak-* 
+*_bak_*
+*_backup_*
+assets/js/*.bak_*
+assets/data/*.bak
+
+# accidental
+main
