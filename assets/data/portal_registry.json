@@ -42,8 +42,8 @@
     },
     {
       "title": "Bibliothek & Ressourcen",
-      "url": "pages/store/index.html?cat=ressourcen",
-      "group": "Sonstiges"
+      "url": "pages/bibliothek/index.html",
+      "group": "Bibliothek"
     },
     {
       "title": "Mathematik (Realschule 5–10)",
