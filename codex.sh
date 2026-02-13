@@ -84,6 +84,39 @@ print("OK: fix-links() done")
 PY
 }
 
+
+typefix() {
+  ensure_registry
+  python3 - <<'PY2'
+import json
+from pathlib import Path
+
+p = Path("assets/data/portal_registry.json")
+data = json.loads(p.read_text(encoding="utf-8"))
+lst = data.get("topics") or data.get("items") or []
+
+def guess_type(url: str, group: str):
+    u = (url or "").lower()
+    g = (group or "").lower()
+    if "/tools/" in u or g == "tools":
+        return "tool"
+    if "/apps/" in u or u.startswith("apps/") or g == "apps":
+        return "app"
+    return "page"
+
+for it in lst:
+    url = (it.get("url") or "").strip()
+    if not url:
+        continue
+    it["type"] = it.get("type") or guess_type(url, it.get("group",""))
+
+data["topics"] = lst
+p.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+print("OK: typefix() updated", len(lst), "topics")
+PY2
+}
+
+
 deploy() {
   # commits all current changes and pushes
   git add -A
@@ -98,6 +131,7 @@ deploy() {
 
 case "$cmd" in
   group) group ;;
+  type) typefix ;;
   add-topic) add_topic "$@" ;;
   fix-links) fix_links ;;
   deploy) deploy ;;
