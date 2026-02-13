@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Quantura – Portal</title>
-    <link rel="stylesheet" href="/core/assets/style.css" />
-    <link rel="stylesheet" href="/pages/portal_v2/portal.css" />
+    <link rel="stylesheet" href="core/assets/style.css" />
+    <link rel="stylesheet" href="pages/portal_v2/portal.css" />
     <script src="/core/js/core_init.js" defer></script>
     <script src="/pages/portal_v2/portal.js" defer></script>
   <link rel="stylesheet" href="assets/css/style.css">
@@ -24,7 +24,8 @@
         <div class="topic-controls">
           <label class="ll-label" for="topicSelect">Wähle ein Thema:</label>
           <input type="search" id="topicSearch" placeholder="Thema suchen …" autocomplete="off" />
-          <select id="topicSelect">
+          <button id="btnBack" type="button" onclick="history.back()">← Zurück</button>
+<select id="topicSelect">
             <option value="">Thema wählen …</option>
           </select>
         </div>
