@@ -49,6 +49,11 @@
       "title": "Mathematik (Realschule 5–10)",
       "url": "pages/faecher/mathematik-realschule/index.html",
       "group": "Fächer"
+    },
+    {
+      "title": "Startseite Portal V2",
+      "url": "pages/portal_v2/index.html",
+      "group": "Sonstiges"
     }
   ]
 }
