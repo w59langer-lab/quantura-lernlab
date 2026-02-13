@@ -6,3 +6,6 @@ _archive_legacy/
 **/*.tgz
 **/*.tar.gz
 **/*.zip
+
+# local backups
+_backup_*/
