@@ -65,6 +65,12 @@
       "url": "pages/portal_v2/index.html",
       "group": "Sonstiges",
       "type": "page"
+    },
+    {
+      "title": "Brüche · Schokolade (Visuell)",
+      "url": "pages/faecher/mathematik-realschule/apps/brueche-schokolade/index.html",
+      "group": "Fächer",
+      "type": "app"
     }
   ]
 }
